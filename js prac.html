@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var price=100000
+        var product=('iphone15')
+        var tax=10
+    
+        console.log(product,('price:'),price+tax);
+    </script>
+    <script>
+        var fruitname=('apple')
+        var count=(10)
+        var price=(20) 
+        var total=(count*price)
+        console.log(fruitname);
+        console.log(total);
+    </script>
+    <script>
+        //function 
+        var a=10
+        var b=20
+        function add(){
+            console.log(a+b);
+        }
+        add()
+    </script>
+    <script>
+        var actor=('kamal')
+        var player=('dhoni')
+        var movie=('tamil movie')
+         
+        function favourite(){
+            console.log('favourite actor:',actor);
+            console.log('favourite player:',player);
+            console.log('favourite movie:',movie);
+        }
+          
+        favourite();
+    </script>
+    <script>
+        //with argument&without return value
+        function welcom(name){
+            console.log('welcome'+name);
+        }
+        welcom('naveen')
+        //without argument&withreturn value
+        function sum(){
+            var a=20
+            var b=10
+            var c=a*b;
+            return c;
+        }
+        console.log(sum());
+         //with argument&withreturn value
+         function a(x,y){
+            var z=x-y;
+            return z;
+         }
+         console.log(a(10,20));
+
+          //with argument&withreturn value
+          function  birth(age){
+             if(age>18)
+             return('you are adult');
+             else{
+                return('you are minor');
+             }
+          }
+          console.log(birth(17));
+
+</script>
+
+<script>
+        //array
+          var games=['foodball','volly ball','hand ball'];
+          console.log(games[1]);
+
+          //array for loop
+           var a=[1,2,,3,4,5,6,7,8];
+            for(var i=0;i<a.length;i++){
+                console.log('number is',a[1])
+            }
+        //for loop age
+         var age=[15,18,20,30,25,22,60];
+         for(var i=0;i<age.length;i++){
+            if((age[i]>18)&&(age[i]<18)){
+                   console.log('you are child');
+            }
+           else if((age[i]>=18)&&(age[i]<25)){
+                   console.log('you are teenage');
+            }
+            else if((age[i]>=25)&&(age[i]<35)){
+                   console.log('you are adult');
+            }
+            else if((age[i]>=35)&&(age[i]<45)){
+                   console.log('you are senior');
+            }
+            else{
+                console.log('you are old person');
+            }
+            console.log(age[i])
+         }
+
+         //true or false
+        var ans=true;
+        if(ans){
+            console.log('great job');
+        }
+        else{
+            console.log('finsh')
+        }
+         
+         // weather if condition
+
+         var season='summer';
+
+         if(season=='spring'){
+            console.log('enjoy blooming');
+         }
+         if(season=='summer'){
+            console.log('have fun in the sun');
+         }
+         if(season=='autumn'){
+            console.log('admire the colorful leaves');
+         }
+         if(season=='winter'){
+            console.log('bundle up stay warm');
+         }
+         //score else if
+          var score=80;
+          if((score>50)&&(score<70)){
+            console.log('great job')
+          }
+          else if((score>70)&&(score>80)){
+            console.log('good');
+          }
+          else{
+            console.log('very good');
+          }
+          //loop
+          for(count=0;count<10;count++){
+            console.log(count);
+          }
+        
+</script>
+    
+    <script>
+
+        //   mul loop
+        for (count=1;count<=10;count++){
+              var a=2
+              c=a*count
+            console.log(count+'*2='+c);
+        }
+
+    </script>
+</body>
+</html>
