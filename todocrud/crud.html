@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="crud" id="crud">
+        <p>
+        <label for="iname">Name:</label><input type="text" name="" id="iname"></p>
+        <input type="submit" id="" value="ADD">
+    </form>
+    <ul id="items" ul>
+   <script>
+        items=[];
+
+        var fname = document.getElementById('crud');
+        fname.addEventListener('submit',(e)=>{
+            e.preventDefault();
+            var iname = document.getElementById('iname').value;
+            console.log(iname);
+            items.push(iname);
+            iname.value='';
+            showlists();
+        })
+        var list=document.getElementById('items');
+        function showlists(){
+            list.innerHTML=''
+            items.forEach((val,index)=> {
+                let li=document.createElement('li');
+                li.innerHTML = ` ${val}<button onclick=edit(${index})>Edit</button> <button onClick=delval(${index})>delete</button> `;
+                console.log(val,index);
+                list.appendChild(li);
+                
+            });
+        }
+        function edit(i){
+            items[i]=''
+            var data = prompt(items[i]);
+             if(data !== ''){
+                 items[i]=data;
+                 showlists();
+                 
+            }
+        }
+        function delval(i){
+            console.log(i);
+            items.splice(i,1);
+            showlists()
+            
+        }
+    </script> 
+</body>
+</html>
