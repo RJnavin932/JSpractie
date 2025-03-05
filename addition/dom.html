@@ -1,0 +1,77 @@
+<!-- <p id="one">
+      hello
+</p> -->
+
+<!-- <script>
+    // select paragraph tag using id 
+
+    var para = document.getElementById('one');
+       
+    console.log(para.textContent);
+    para.textContent=('bye');
+</script> -->
+
+<!-- <h1 id="h">
+   HI
+</h1> -->
+<script>
+    var h1=document.getElementById('h');
+
+    console.log(h1.textContent);
+    h1.textContent=('Welcome');
+</script>
+
+
+ box1:<input type="text" name="" id="num1" >
+ box2:<input type="text" name="" id="num2">
+<button onclick="num()">add</button>
+ <p id="Resuld">Resuld:</p>
+
+<script>
+
+    var box1=document.getElementById('num1');
+    var box2=document.getElementById('num2');
+   
+    var resuld=document.getElementById('Resuld');
+      
+   
+
+    function num(){
+
+        var box1value=Number(box1.value)
+         var box2value=Number(box2.value)
+
+    var total=box1value+box2value
+        
+    resuld.textContent=(total);
+    }
+  
+</script>
+
+
+ <!-- <p id="name">naveen</p>
+  <button onclick="change()">change</button>
+ <script>
+    var p=document.getElementById('name')
+
+     console.log(p.textContent);
+
+     function change(){
+        name.textContent('jaya naveen.r')
+     }
+      </script> -->
+
+      <!-- <h1 id="h1">hello wolrd</h1>
+      <button onclick="change()">click</button>
+   <script>
+           //elements
+         var h1 = document.getElementById('h1')
+         console.log(h1.textContent) ; 
+
+     function change(){
+       h1.textContent('bye wolrd');
+   }
+
+   </script> -->
+
+   
