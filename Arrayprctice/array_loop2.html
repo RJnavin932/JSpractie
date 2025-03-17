@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var data=[10,-48,72,-92,0,-1,0,-85];
+    for(var i=0;i<data.length;i++){
+        if(data[i]>0){
+            console.log('positive',data[i]);
+        }
+        else if(data[i]<0){
+            console.log('negative',data[i]);
+        }
+        else{
+            console.log('zero',data[i]);
+        }
+    }
+</script>
+<script>
+    var p=0;
+    var n=0;
+    var z=0;
+    var data=[10,-48,72,-92,0,-1,0,-85];
+    for(var i=0;i<data.length;i++){
+        if(data[i]>0){
+            console.log('positive');
+            p++;
+           
+        }
+        else if(data[i]<0){
+            console.log('negative');
+            n++;
+           
+        }
+        else{
+            console.log('zero');
+            z++;
+           
+        }
+        
+    }
+    console.log(p);
+     console.log(z);
+      console.log(n);
+</script>
+<script>
+    var count=0;
+    var mark=[35,48,75,99,87,35,17,48];
+    for(var i=0;i<mark.length;i++){
+        if((mark[i]>0)&&(mark[i]<34)){
+            console.log('fail');
+        }
+        else if((mark[i]>=35)&&(mark[i]<50)){
+            console.log('pass:c grade',mark[i]);
+        }
+        else if((mark[i]>51)&&(mark[i]<=75)){
+            console.log('pass:b grade',mark[i]);
+        }
+        else if((mark[i]>76)&&(mark[i]<=100)){
+            console.log('pass:a grade',mark[i]);
+        }
+        else{
+            console.log('type wrong number',mark[i]);
+        }
+    }
+</script>
+<script>
+    var c=0;
+    var t=0;
+    var a=0;
+    var s=0;
+    var age=[12,47,99,110,56,78,88,10,8,19,64,14];
+    for(var i=0;i<age.length;i++){
+        if((age[i]>=0)&&(age[i]<=12)){
+            console.log('child',age[i]);
+            c++;
+  
+            
+        }
+        else if((age[i]>=13)&&(age[i]<=19)){
+            console.log('teenage',age[i]);
+            t++;
+   
+        }
+        else if((age[i]>=20)&&(age[i]<64)){
+            console.log('adult',age[i]);
+            a++;
+            
+        }
+        else{
+            console.log('senior',age[i])
+            s++;
+        }
+    }
+    console.log('child:',c)
+    console.log('teenage:',t)
+    console.log('adult:',a)
+    console.log('senior:',s)
+</script>
+<script>
+    var letters=['a','e','i','o','u','f','m'];
+    for(var i=0;i<letters.length;i++){
+        if((letters[i]=='a' )||(letters[i]=='e')||(letters[i]=='i')||(letters[i]=='o')||(letters[i]=='u'))
+        {
+            console.log('vowel',letters[i]);
+        }
+        else{
+            console.log('notvowel',letters[i]);
+        }
+    }
+</script>
+<script>
+    var weather=[10,20,40,30,25];
+    for(var i=0;i<weather.length;i++){
+        if((weather[i]>0)&&(weather[i]<=9)){
+            console.log('cold weather',weather[i]);
+        }
+        else if((weather[i]>=10)&&(weather[i]<20)){
+            console.log('cool weather',weather[i]);
+        }
+        else if((weather[i]>=20)&&(weather[i]<30)){
+            console.log('warm weather',weather[i]);
+        }
+        else{
+            console.log('hot weather',weather[i]);
+        }
+    }
+</script>
+<body>
+    
+</body>
+</html>
