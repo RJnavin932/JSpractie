@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // // fruits.sort();
+
+        // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // fruits.reverse();
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.sort();
+        fruits.reverse();
+        console.log(fruits);
+
+
+        const months = ["Jan", "Feb", "Mar", "Apr"];
+        const sorted = months.toReversed();
+        //  const sorted = months.toSorted();
+        console.log(sorted);
+
+        //  const points = [40, 100, 1, 5, 25, 10];
+        // points.sort((a, b)=>a - b);
+        const points = [40, 100, 1, 5, 25, 10];
+        points.sort(() => 0.2 - Math.random());
+        console.log(points);
+
+        const cars = [
+            { type: "Volvo", year: 2016 },
+            { type: "Saab", year: 2001 },
+            { type: "BMW", year: 2010 }
+        ];
+        cars.sort((a, b) => a.type.localeCompare(b.type));
+        // cars.sort((a,b)=>a.year-b.year)
+    
+        console.log(cars);
+
+    </script>
+</body>
+
+</html>
